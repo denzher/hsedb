@@ -9,16 +9,15 @@ Created on Sat Apr 21 11:31:12 2018
 import library.database as Database
 
 dbPath = 'data/db.txt'
-FIELDS = { 'id': 0, 'Name' : 1, 'Lastname' : 2, 'Age' : 2, 'Weight' : 3 }  
+schemePath = 'data/scheme.txt' 
 
 def main():
     """
     Main entry point
     """
     print('Make DBs great again v0.1 ready')
-    db = Database.DB(dbPath, ',', 'data/scheme.txt')
+    db = Database.DB(dbPath, ',', schemePath)
     db.printEntries()
-    db.writeDB()
     
 if __name__ == '__main__':
     main()
