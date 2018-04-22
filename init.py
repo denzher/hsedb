@@ -6,19 +6,21 @@ Created on Sat Apr 21 11:31:12 2018
 @author: AlexKale
 """
 
-import library.database as Database
+import library.database as database
 
-dbPath = 'data/db.txt'
-schemePath = 'data/scheme.txt' 
+#убрать, читать имена файлов из консоли
+DB_PATH = 'data/db.txt'
+SCHEME_PATH = 'data/scheme.txt'
 
 def main():
     """
     Точка входа
     """
     print('Make DBs great again v0.1 ready')
-    db = Database.DB(dbPath, ',', schemePath)
-    db.printEntries()
-    
+    base = database.DataBase(DB_PATH, ',', DB_PATH)
+    base.print_scheme()
+    base.print_entries()
+
 if __name__ == '__main__':
     main()
     

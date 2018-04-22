@@ -1,5 +1,5 @@
-Название,str,0
-Год,int,1
-Режиссер,str,2
-Страна,str,3
-Бюджет,float,4
+title,str,0
+year,int,1
+director,str,2
+country,str,3
+budget,float,4
